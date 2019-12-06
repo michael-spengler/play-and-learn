@@ -4,12 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
-
+import { ImpressumModule } from 'german-impressum';
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    ImpressumModule,
     FormsModule,
     CommonModule,
     BrowserModule,
