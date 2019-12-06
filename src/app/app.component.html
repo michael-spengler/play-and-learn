@@ -1,1 +1,29 @@
-hallo
+<div>
+
+  <h1>
+    Play and Learn
+  </h1>
+
+  <input [(ngModel)]="qaPair.question" type="text" name="question1" id="question1" placeholder="Frage...">
+  <p></p>
+  <input [(ngModel)]="qaPair.answer" type="text" name="answer1" id="answer1" placeholder="Anwort...">
+  <p></p>
+  <br>
+  <button (click)="clickSave()">
+    Speichern
+  </button>
+
+
+  <div *ngIf="qaPairCollection.length>0">
+    <br>
+    Questions So Far:
+
+    <span *ngFor="let item of qaPairCollection">
+      <br>
+      The question is {{item.question}} <br>
+      The answer is {{item.answer}}
+
+    </span>
+  </div>
+
+</div>
