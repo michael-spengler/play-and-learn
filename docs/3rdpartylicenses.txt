@@ -61,6 +61,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
+german-impressum
+
 regenerator-runtime
 MIT
 MIT License
