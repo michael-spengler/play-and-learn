@@ -5,11 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { ImpressumModule } from 'german-impressum';
+import { NavbarModule } from 'ng-responsive-navbar';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    NavbarModule,
     ImpressumModule,
     FormsModule,
     CommonModule,

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "xy": "ng serve",
     "build": "ng build --prod --output-path docs",
     "test": "ng test",
     "lint": "ng lint",
@@ -26,6 +26,7 @@
     "@angular/router": "~8.2.7",
     "german-impressum": "^0.1.1",
     "husky": "^3.1.0",
+    "ng-responsive-navbar": "^0.1.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

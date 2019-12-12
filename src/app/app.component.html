@@ -1,31 +1,38 @@
-<div>
 
-  <h1>
-    Play and Learn
-  </h1>
+    <h1>
+      Play and Learn
+    </h1>
 
-  <input [(ngModel)]="qaPair.question" type="text" name="question1" id="question1" placeholder="Frage...">
-  <p></p>
-  <input [(ngModel)]="qaPair.answer" type="text" name="answer1" id="answer1" placeholder="Anwort...">
-  <p></p>
-  <br>
-  <button (click)="clickSave()">
-    Speichern
-  </button>
-
-
-  <div *ngIf="qaPairCollection.length>0">
+    <input [(ngModel)]="qaPair.question" type="text" name="question1" id="question1" placeholder="Frage...">
+    <p></p>
+    <input [(ngModel)]="qaPair.answer" type="text" name="answer1" id="answer1" placeholder="Anwort...">
+    <p></p>
     <br>
-    Questions So Far:
+    <button (click)="clickSave()">
+      Speichern
+    </button>
 
-    <span *ngFor="let item of qaPairCollection">
+
+    <div *ngIf="qaPairCollection.length>0">
       <br>
-      The question is {{item.question}} <br>
-      The answer is {{item.answer}}
+      Questions So Far:
 
-    </span>
-  </div>
+      <span *ngFor="let item of qaPairCollection">
+        <br>
+        The question is {{item.question}} <br>
+        The answer is {{item.answer}}
 
-  <lib-impressum [individualImpressumData]="individualImpressumData"></lib-impressum>
+      </span>
+    </div>
 
-</div>
+    <p></p>
+
+    <button *ngIf="qaPairCollection.length>2" (click)="clickGenerateXWordPuzzle()">
+      Rätsel Generieren
+    </button>
+
+
+
+    <lib-impressum [individualImpressumData]="individualImpressumData"></lib-impressum>
+
+    <lib-navbar [navBarData]="navBarData" (clickMenuEntry)="onClickMenuEntry($event)"></lib-navbar>
